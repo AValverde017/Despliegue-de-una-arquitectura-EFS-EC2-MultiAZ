@@ -123,7 +123,7 @@ a2enmod lbmethod_byrequests
 
 
 
-- Ahora podemos comprobar si ponemos la IP del balanceador que nos muestra la página alojada
+- Ahora podemos comprobar que si ponemos la IP del balanceador nos muestra la página alojada
 
 ![IP balan](./15%20netfliz%20desde%20ip%20publica%20de%20balanceador.JPG)
 
