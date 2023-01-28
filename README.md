@@ -88,13 +88,13 @@ Aqui se observa que ambas máquinas comparten el mismo punto de montaje  y el mi
 
 - Crearemos una instancia con el sistema operativo Ubuntu. La configuración inicial será la normal. En datos de usuario pondremos el siguiente script:
 
-#!/bin/bash
-sudo apt update -y 
-sudo apt install apache2 -y
-sudo apt install php -y
-sudo apt install libapache2-mod-php -y
-sudo apt install mysql-server -y
-sudo apt install php-mysql -y
+#!/bin/bash  
+sudo apt update -y   
+sudo apt install apache2 -y  
+sudo apt install php -y  
+sudo apt install libapache2-mod-php -y  
+sudo apt install mysql-server -y  
+sudo apt install php-mysql -y  
 
 - Asignaremos IP elásticas a todas nuestra máquinas con IP privadas para hacer que solo puedan verse entre ellas.
 
@@ -102,16 +102,16 @@ sudo apt install php-mysql -y
 
 - Añadimos estos comandos uno por uno para habilitarlo como balanceador y como proxy inverso:
 
-a2enmod proxy
-a2enmod proxy_http
-a2enmod proxy_ajp
-a2enmod rewrite
-a2enmod deflate
-a2enmod headers
-a2enmod proxy_balancer
-a2enmod proxy_connect
-a2enmod proxy_html
-a2enmod lbmethod_byrequests
+a2enmod proxy  
+a2enmod proxy_http  
+a2enmod proxy_ajp  
+a2enmod rewrite  
+a2enmod deflate  
+a2enmod headers  
+a2enmod proxy_balancer  
+a2enmod proxy_connect  
+a2enmod proxy_html  
+a2enmod lbmethod_byrequests  
 
 - Reiniciamos apache en nuestra máquina
 
