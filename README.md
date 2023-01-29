@@ -121,7 +121,11 @@ a2enmod lbmethod_byrequests
 
 ![config 000](./12%20conf%20000%20balanceador.JPG)
 
+En la captura anterior falta la líne ade código:
 
+ProxyPass /balancer-manager !
+
+Esta línea también es necesaria para que el balanceador actue como proxy inverso.
 
 - Ahora podemos comprobar que si ponemos la IP del balanceador nos muestra la página alojada
 
